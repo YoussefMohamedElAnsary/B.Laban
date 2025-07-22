@@ -141,6 +141,11 @@ const resources = {
       "carousel.slide5.title": "Pistachio Dream Parfait",
       "carousel.slide5.category": "Desserts",
       "carousel.slide5.date": "2 Mar, 2024",
+      "Discover our delicious selection of dairy products, desserts, and traditional favorites": "Discover our delicious selection of dairy products, desserts, and traditional favorites",
+      "Quick Links": "Quick Links",
+      "Contact": "Contact",
+      "Menu": "Menu",
+      "All rights reserved.": "All rights reserved.",
     }
   },
   ar: {
@@ -282,6 +287,11 @@ const resources = {
       "carousel.slide5.title": "بارفيه الفستق الحلمي",
       "carousel.slide5.category": "حلويات",
       "carousel.slide5.date": "٢ مارس ٢٠٢٤",
+      "Discover our delicious selection of dairy products, desserts, and traditional favorites": "اكتشف مجموعتنا اللذيذة من منتجات الألبان والحلويات والمأكولات التقليدية",
+      "Quick Links": "روابط سريعة",
+      "Contact": "اتصل بنا",
+      "Menu": "القائمة",
+      "All rights reserved.": "جميع الحقوق محفوظة.",
     }
   }
 };

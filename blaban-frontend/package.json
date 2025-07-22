@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/YoussefMohamedElAnsary.github.io/B.Laban",
+  "homepage": "https://YoussefMohamedElAnsary.github.io/B.Laban",
   "name": "blaban-frontend",
   "private": true,
   "version": "0.0.0",
@@ -19,12 +19,15 @@
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@tailwindcss/vite": "^4.1.11",
+    "axios": "^1.10.0",
+    "firebase": "^12.0.0",
     "i18next": "^25.3.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-fast-marquee": "^1.6.5",
     "react-i18next": "^15.6.0",
-    "react-router-dom": "^7.7.0"
+    "react-router-dom": "^7.7.0",
+    "swiper": "^11.2.10"
   },
   "devDependencies": {
     "@eslint/js": "^9.30.1",
