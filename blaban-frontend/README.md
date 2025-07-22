@@ -1,10 +1,13 @@
-# B.Laban Frontend
+# B.Laban
 
 ## Deployment Instructions
 
 To deploy and run this project locally:
 
-1. **Install dependencies:**
+1. **Enter directory:**
+   write in the terminal cd blaban-frontend
+
+2. **Install dependencies:**
    ```bash
    npm install
    ```
@@ -13,7 +16,7 @@ To deploy and run this project locally:
    yarn install
    ```
 
-2. **Start the development server:**
+3. **Start the development server:**
    ```bash
    npm run dev
    ```
@@ -22,7 +25,7 @@ To deploy and run this project locally:
    yarn dev
    ```
 
-3. Open your browser and go to the URL provided in the terminal (usually `http://localhost:5173/`).
+4. Open your browser and go to the URL provided in the terminal (`http://localhost:5173/`).
 
 ---
 
