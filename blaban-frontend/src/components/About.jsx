@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import AboutImage from '../assets/About.jpg'
 import Footer from './Footer'
 import { useTranslation } from 'react-i18next';
@@ -48,6 +48,18 @@ function About() {
   const [activeMarquee, setActiveMarquee] = useState(0);
   const [fadeIn, setFadeIn] = useState(true);
   const isArabic = i18n.language === 'ar';
+
+  // Automatically switch marquees every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setFadeIn(false);
+      setTimeout(() => {
+        setActiveMarquee((prev) => (prev + 1) % marqueeData.length);
+        setFadeIn(true);
+      }, 200); // match fade duration
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
 
   // Handle Marquee click
   const handleMarqueeClick = (idx) => {
