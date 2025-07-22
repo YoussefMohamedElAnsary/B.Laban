@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Navbar from './Navbar'
 import { useTranslation } from 'react-i18next'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faEnvelope, faMapMarkerAlt, faClock } from '@fortawesome/free-solid-svg-icons'
@@ -40,8 +39,6 @@ function Contact() {
 
   return (
     <div>
-      <Navbar />
-      
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-blue-400 to-blue-900 text-white py-16 px-6">
         <div className="max-w-6xl mx-auto text-center">

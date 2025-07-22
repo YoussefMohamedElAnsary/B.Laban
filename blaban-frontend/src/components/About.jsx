@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Navbar from './Navbar'
 import AboutImage from '../assets/About.jpg'
 import Footer from './Footer'
 import { useTranslation } from 'react-i18next';
@@ -63,7 +62,6 @@ function About() {
 
   return (
     <div>
-      <Navbar/>
       {/* Hero Section with Fixed Background */}
       <div 
         style={{

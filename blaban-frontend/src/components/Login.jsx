@@ -92,7 +92,6 @@ function Login() {
           <Link to="/register" className="text-coral font-semibold hover:underline">{t('Register')}</Link>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

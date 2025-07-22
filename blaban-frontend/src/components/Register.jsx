@@ -96,7 +96,6 @@ function Register() {
           <Link to="/login" className="text-coral font-semibold hover:underline">{t('Sign In')}</Link>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

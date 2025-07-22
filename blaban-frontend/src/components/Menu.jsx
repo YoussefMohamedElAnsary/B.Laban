@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import Navbar from './Navbar';
 import { useTranslation } from 'react-i18next';
 import { db } from '../firebaseConfig';
 import { collection, getDocs } from 'firebase/firestore';
@@ -102,7 +101,7 @@ function Menu() {
 
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       {/* Admin Add Menu Form - only show for admin users */}
       {isAuthenticated && isAdmin && <AdminMenuForm onItemAdded={fetchMenuItems} />}
       {/* Hero Section */}

@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from './Navbar'
 import Banner from './Banner'
 import BlogCarousel from './Carousel'
 import Footer from './Footer'
@@ -19,7 +18,7 @@ function Home() {
   const dessert1Class = `absolute bottom-0 md:bottom-0 left-1/2 md:left-auto -translate-x-1/2 md:translate-x-0 ${isRTL ? 'md:left-32' : 'md:right-32'} w-150 z-20`;
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="flex flex-col lg:flex-row relative">
         {/* XL+ absolute, above text */}
         <div className="hidden xl:block absolute left-1/2 top-20 text-xl px-4 py-3 -translate-x-1/2 z-10 rounded-3xl shadow-2xl bg-white text-dark-blue hover:scale-110 duration-300 ease-in-out transition-all font-bold whitespace-nowrap"

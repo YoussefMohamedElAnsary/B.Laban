@@ -3,9 +3,8 @@ import { useTranslation } from 'react-i18next'
 import { Link, useNavigate } from 'react-router-dom'
 import blabanlogo from '../assets/blabanlogo.png';
 
-function Navbar() {
+function Navbar({ isMenuOpen, toggleMenu, closeMenu }) {
   const { i18n, t } = useTranslation();
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isAuthenticated, setIsAuthenticated] = useState(() => {
     return localStorage.getItem('isAuthenticated') === 'true';
   });
@@ -22,20 +21,12 @@ function Navbar() {
     document.body.dir = i18n.language === 'ar' ? 'rtl' : 'ltr';
   };
 
-  const toggleMenu = () => {
-    setIsMenuOpen((prev) => !prev);
-  };
-
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-  };
-
   return (
-    <div className="flex flex-row items-center justify-between w-full h-25 p-2.5 bg-coral text-nowrap px-4 md:px-10 relative">
+    <div className="flex flex-row items-center justify-between w-full h-25 p-2.5 bg-coral text-nowrap px-4 md:px-10 relative z-50">
       {/* Logo and Brand */}
       <div className="flex flex-row items-center">
         <Link to="/">
-          <img className="w-16 h-14 md:w-24 md:h-20 px-2" src={blabanlogo} alt="Logo" />
+          <img className="h-14 md:h-20 px-2 object-contain" style={{ width: 'auto', maxWidth: '6rem' }} src={blabanlogo} alt="B.Laban Logo" />
         </Link>
         <Link to="/" className="text-white text-lg md:text-2xl font-bold hover:text-gray-200 transition-colors">
           {t('Brand')}
@@ -86,7 +77,7 @@ function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      <div className={`md:hidden absolute top-full left-0 right-0 bg-coral shadow-lg transition-all duration-300 ease-in-out ${isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
+      <div className={`md:hidden absolute top-full left-0 right-0 bg-coral shadow-lg transition-all duration-300 ease-in-out z-50 ${isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
         <ul className="flex flex-col text-white text-lg font-bold py-4">
           <li className='px-4 py-3 hover:bg-coral-dark transition-colors'>
             <Link to="/" onClick={closeMenu}>{t('Home')}</Link>
