@@ -162,7 +162,7 @@ function About() {
                 onClick={() => handleMarqueeClick(idx)}
               >
                 {i18n.language === 'ar' ? (
-                  <div className={`text-[5vw] font-bold whitespace-nowrap transition-colors duration-300 ${activeMarquee === idx ? row.color : 'text-blue-100 opacity-40'}`}
+                  <div className={`font-bold whitespace-nowrap transition-colors duration-300 ${activeMarquee === idx ? row.color : 'text-blue-100 opacity-40'} text-[8vw] md:text-[5vw]`}
                     style={{ direction: 'rtl', textAlign: 'right' }}
                   >
                     {row.label_ar}
@@ -174,7 +174,7 @@ function About() {
                     speed={idx === 0 ? 40 : idx === 1 ? 30 : 35}
                     gradient={true}
                     gradientWidth={100}
-                    className={`text-[5vw] font-bold whitespace-nowrap transition-colors duration-300 ${activeMarquee === idx ? row.color : 'text-blue-100 opacity-40'}`}
+                    className={`font-bold whitespace-nowrap transition-colors duration-300 ${activeMarquee === idx ? row.color : 'text-blue-100 opacity-40'} text-[8vw] md:text-[5vw]`}
                     dir="ltr"
                   >
                     {row.label_en}
@@ -187,7 +187,6 @@ function About() {
           <div className={`relative z-10 bg-blue-900 text-white p-8 rounded-lg shadow-lg w-[350px] transition-opacity duration-500 ${fadeIn ? 'opacity-100' : 'opacity-0'}`}
             style={{ pointerEvents: 'auto' }}
           >
-            <div className="text-xs mb-2">[{activeMarquee + 1}]</div>
             <h2 className="text-2xl font-bold mb-2">{i18n.language === 'ar' ? marqueeData[activeMarquee].card.title_ar : marqueeData[activeMarquee].card.title_en}</h2>
             <p className="mb-4">{i18n.language === 'ar' ? marqueeData[activeMarquee].card.desc_ar : marqueeData[activeMarquee].card.desc_en}</p>
             <img src={marqueeData[activeMarquee].card.img} alt={i18n.language === 'ar' ? marqueeData[activeMarquee].card.title_ar : marqueeData[activeMarquee].card.title_en} className="rounded-lg w-full h-32 object-cover" />
