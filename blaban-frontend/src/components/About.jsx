@@ -162,7 +162,7 @@ function About() {
                 onClick={() => handleMarqueeClick(idx)}
               >
                 {i18n.language === 'ar' ? (
-                  <div className={`font-bold whitespace-nowrap transition-colors duration-300 ${activeMarquee === idx ? row.color : 'text-blue-100 opacity-40'} text-[8vw] md:text-[5vw]`}
+                  <div className={`font-bold whitespace-nowrap transition-colors duration-300 ${activeMarquee === idx ? row.color : 'text-blue-200 opacity-40'} text-[8vw] md:text-[5vw]`}
                     style={{ direction: 'rtl', textAlign: 'right' }}
                   >
                     {row.label_ar}
@@ -174,7 +174,7 @@ function About() {
                     speed={idx === 0 ? 40 : idx === 1 ? 30 : 35}
                     gradient={true}
                     gradientWidth={100}
-                    className={`font-bold whitespace-nowrap transition-colors duration-300 ${activeMarquee === idx ? row.color : 'text-blue-100 opacity-40'} text-[8vw] md:text-[5vw]`}
+                    className={`font-bold whitespace-nowrap transition-colors duration-300 ${activeMarquee === idx ? row.color : 'text-blue-300 opacity-40'} text-[8vw] md:text-[5vw]`}
                     dir="ltr"
                   >
                     {row.label_en}
