@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+    --color-white: rgb(255,255,255);
+    --color-coral: rgb(0, 116, 217);
+    --color-dark-blue: #0074d9;
+    --spacing: 4px;
+    --font-body: Inter, sans-serif;
+}
+
+/* Prevent horizontal overflow on the whole website */
+html, body {
+  overflow-x: hidden !important;
+}
+
+/* @keyframes marquee-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+@keyframes marquee-right {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(100%); }
+}
+.animate-marquee-left {
+  animation: marquee-left 20s linear infinite;
+}
+.animate-marquee-right {
+  animation: marquee-right 25s linear infinite;
+}
+
+@keyframes rtl-marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+.rtl-marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  direction: rtl;
+  position: relative;
+  width: 100%;
+}
+.rtl-marquee-content {
+  display: inline-block;
+  min-width: 300%;
+  animation: rtl-marquee 60s linear infinite;
+  font-size: 5vw;
+  font-weight: bold;
+  color: #c2410c33;
+} */
