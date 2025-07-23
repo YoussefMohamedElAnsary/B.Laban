@@ -52,14 +52,14 @@ function Navbar({ isMenuOpen, toggleMenu, closeMenu }) {
             onClick={signOut}
             className="ml-2 px-4 py-2 bg-white text-coral rounded font-semibold hover:bg-gray-200 transition-all text-sm md:text-base"
           >
-            Sign Out
+            {t('Sign Out')}
           </button>
         ) : (
           <Link
             to="/login"
             className="ml-2 px-4 py-2 bg-white text-coral rounded font-semibold hover:bg-gray-200 transition-all text-sm md:text-base"
           >
-            Sign In
+            {t('Sign In')}
           </Link>
         )}
         {/* Mobile Menu Button */}
@@ -93,9 +93,9 @@ function Navbar({ isMenuOpen, toggleMenu, closeMenu }) {
           </li>
           <li className='px-4 py-3 hover:bg-coral-dark transition-colors'>
             {isAuthenticated ? (
-              <button onClick={() => { signOut(); closeMenu(); }} className="w-full text-left">Sign Out</button>
+              <button onClick={() => { signOut(); closeMenu(); }} className="w-full text-left">{t('Sign Out')}</button>
             ) : (
-              <Link to="/login" onClick={closeMenu} className="w-full inline-block">Sign In</Link>
+              <Link to="/login" onClick={closeMenu} className="w-full inline-block">{t('Sign In')}</Link>
             )}
           </li>
         </ul>
