@@ -3,6 +3,7 @@ import AboutImage from '../assets/About.jpg'
 import Footer from './Footer'
 import { useTranslation } from 'react-i18next';
 import Marquee from 'react-fast-marquee';
+import { Link } from 'react-router-dom'
 
 const marqueeData = [
   {
@@ -257,18 +258,18 @@ function About() {
               {t('Join us for an unforgettable dining experience that combines tradition with innovation.')}
             </p>
             <div className="space-x-4">
-              <a 
-                href="/menu" 
+              <Link 
+                to="/menu" 
                 className="inline-block bg-white text-coral px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
               >
                 {t('View Our Menu')}
-              </a>
-              <a 
-                href="/contact" 
+              </Link>
+              <Link 
+                to="/contact" 
                 className="inline-block border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-coral transition-colors"
               >
                 {t('Contact Us')}
-              </a>
+              </Link>
             </div>
           </div>
         </section>

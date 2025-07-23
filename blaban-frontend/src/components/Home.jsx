@@ -3,7 +3,6 @@ import Banner from './Banner'
 import BlogCarousel from './Carousel'
 import Footer from './Footer'
 import Dessert from '../assets/Dessert.png'
-
 import Dessert1 from '../assets/Dessert1.png'
 import Dessert2 from '../assets/Dessert2.png'
 import Dessert3 from '../assets/Dessert3.jpeg'
@@ -11,11 +10,13 @@ import { faTruckFast } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useTranslation } from 'react-i18next';
 import CoreValues from './CoreValues';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Home() {
   const { t, i18n } = useTranslation();
   const isRTL = i18n.language === 'ar';
   const dessert1Class = `absolute bottom-0 md:bottom-0 left-1/2 md:left-auto -translate-x-1/2 md:translate-x-0 ${isRTL ? 'md:left-32' : 'md:right-32'} w-150 z-20`;
+  const navigate = useNavigate();
   return (
     <>
       {/* <Navbar /> */}
@@ -56,9 +57,12 @@ function Home() {
             </div>
           </div>
           
-          <button className='bg-coral px-6 md:px-2 py-3 md:py-2 rounded-4xl text-white text-lg md:text-2xl text-nowrap w-full md:w-3xs transition-all duration-300 hover:scale-110'>
+          <Link
+            to="/menu"
+            className="bg-coral px-6 md:px-2 py-3 md:py-2 rounded-4xl text-white text-lg md:text-2xl text-nowrap w-full md:w-3xs transition-all duration-300 hover:scale-110"
+          >
             {t('See our products')}
-          </button>
+          </Link>
         </section>
 
         {/* Image Section - Full width on mobile, half on desktop */}
