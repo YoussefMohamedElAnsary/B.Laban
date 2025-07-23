@@ -6,6 +6,7 @@ import MenuItem from './MenuItem';
 import AdminMenuForm from './AdminMenuForm';
 import Footer from './Footer';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 function Menu() {
   const { t, i18n } = useTranslation();
@@ -163,12 +164,12 @@ function Menu() {
           <p className="text-xl mb-8">
             {t('Contact us for custom orders or dietary requirements')}
           </p>
-          <a 
-            href="/contact" 
-            className="inline-block bg-coral text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors"
-          >
-            {t('Contact Us')}
-          </a>
+          <Link 
+                to="/contact" 
+                className="inline-block border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-coral transition-colors"
+              >
+                {t('Contact Us')}
+              </Link>
         </div>
       </div>
       <Footer />

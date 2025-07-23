@@ -59,7 +59,7 @@ function Home() {
           
           <Link
             to="/menu"
-            className="bg-coral px-6 md:px-2 py-3 md:py-2 rounded-4xl text-white text-lg md:text-2xl text-nowrap w-full md:w-3xs transition-all duration-300 hover:scale-110"
+            className="bg-coral px-6 md:px-2 py-3 md:py-2 rounded-4xl text-white text-lg md:text-2xl text-nowrap w-full md:w-3xs transition-all duration-300 hover:scale-110 text-center font-medium"
           >
             {t('See our products')}
           </Link>
