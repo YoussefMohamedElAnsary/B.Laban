@@ -86,7 +86,7 @@ function Register() {
           </div>
           <button
             type="submit"
-            className="w-full bg-coral text-white py-3 px-6 rounded-lg font-semibold hover:bg-orange-600 transition-colors duration-300"
+            className="w-full bg-coral text-white py-3 px-6 rounded-lg font-semibold hover:scale-110 transition-all cursor-pointer duration-300"
           >
             {t('Register')}
           </button>

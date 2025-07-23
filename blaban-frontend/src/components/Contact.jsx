@@ -29,7 +29,6 @@ function Contact() {
     // Store form submission in Firestore
     try {
       await addDoc(collection(db, 'contactMessages'), formData);
-      // Optionally, show a success message or reset form
       setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
       alert(t('Your message has been sent!'));
     } catch (error) {
@@ -111,13 +110,13 @@ function Contact() {
               <div>
                 <h3 className="text-xl font-semibold text-gray-800 mb-4">{t('Follow Us')}</h3>
                 <div className="flex space-x-4">
-                  <a href="#" className="w-10 h-10 bg-coral rounded-full flex items-center justify-center text-white hover:bg-orange-600 transition-colors">
+                  <a href="#" className="w-10 h-10 bg-coral rounded-full flex items-center justify-center text-white  hover:scale-110 transition-all cursor-pointer duration-300">
                     <FontAwesomeIcon icon={faFacebookF} className="text-white text-lg" />
                   </a>
-                  <a href="#" className="w-10 h-10 bg-coral rounded-full flex items-center justify-center text-white hover:bg-orange-600 transition-colors">
+                  <a href="#" className="w-10 h-10 bg-coral rounded-full flex items-center justify-center text-white hover:scale-110 transition-all cursor-pointer duration-300">
                     <FontAwesomeIcon icon={faInstagram} className="text-white text-lg" />
                   </a>
-                  <a href="#" className="w-10 h-10 bg-coral rounded-full flex items-center justify-center text-white hover:bg-orange-600 transition-colors">
+                  <a href="#" className="w-10 h-10 bg-coral rounded-full flex items-center justify-center text-white  hover:scale-110 transition-all cursor-pointer duration-300">
                     <FontAwesomeIcon icon={faTwitter} className="text-white text-lg" />
                   </a>
                 </div>
@@ -265,16 +264,6 @@ function Contact() {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-lg font-semibold text-gray-800 mb-3">{t('Do you offer delivery?')}</h3>
               <p className="text-gray-600">{t('Yes, we offer fast delivery to all areas within our service radius.')}</p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-lg font-semibold text-gray-800 mb-3">{t('Can I make a reservation?')}</h3>
-              <p className="text-gray-600">{t('Absolutely! You can make reservations by phone or through our contact form.')}</p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-lg font-semibold text-gray-800 mb-3">{t('Do you have vegetarian options?')}</h3>
-              <p className="text-gray-600">{t('Yes, we offer a variety of vegetarian and vegan options on our menu.')}</p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md">
